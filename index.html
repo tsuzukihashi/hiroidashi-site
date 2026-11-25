@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja" data-title-ja="ひろいだし｜鉄筋の本数・重量・定尺の計算" data-title-en="Hiroidashi | Rebar takeoff calculator">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"ja"],p="en";for(var i=0;i<l.length;i++){var c=String(l[i]).toLowerCase();if(c.indexOf("ja")===0){p="ja";break}if(c.indexOf("en")===0){p="en";break}}var d=document.documentElement;d.lang=p;var t=d.getAttribute("data-title-"+p);if(t){document.title=t}})();</script>
+<title>ひろいだし｜鉄筋の本数・重量・定尺の計算</title>
+<meta name="description" content="配置長とピッチから、ピッチを超えないように切り上げて本数を出し、部材ごとに径ごとの重さ、現場の集計で定尺を何本頼むかまで。買い切り・広告なし。 / Bar counts rounded up so no gap exceeds the spacing, weights by bar size for each member, and how many stock bars to order. One purchase, no ads.">
+<meta property="og:title" content="ひろいだし｜鉄筋の本数・重量・定尺の計算">
+<meta property="og:description" content="配置長とピッチから、ピッチを超えないように切り上げて本数を出し、部材ごとに径ごとの重さ、現場の集計で定尺を何本頼むかまで。買い切り・広告なし。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hiroidashi.tsuzukit.com/">
+<meta property="og:image" content="https://hiroidashi.tsuzukit.com/assets/og.jpg">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div data-l="ja" lang="ja">
+<header class="site"><div class="wrap">
+<a class="brand" href="./"><img src="assets/icon.png" alt="" width="32" height="32">ひろいだし</a>
+<nav class="site"><a href="./">紹介</a><a href="support.html">使い方</a><a href="privacy.html">プライバシー</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<div>
+<p class="eyebrow">iPhone・iPad・Android の鉄筋の拾い出し</p>
+<h1>本数は、ピッチ以下で。<br>部材ごとの重さと、定尺の発注まで。</h1>
+<p class="lead">図面から鉄筋の数量を拾い出す、配筋の計算アプリです。部材ごとに鉄筋の行（径・ピッチか本数・切寸）を足すと、間隔がピッチを超えないように切り上げた本数と、JIS の単位質量で重さが出ます。現場の集計では、径ごとの重さと、定尺を何本頼むか（端材・歩留まり）まで出します。</p>
+<a class="cta" href="#store" id="store">App Store・Google Play で配信予定</a>
+<p class="note">買い切りで全部の機能が使え、アプリ内課金・サブスクリプション・広告はありません。</p>
+</div>
+<img src="assets/hero.jpg" alt="組んだ鉄筋のそばで、図面を見ながら数量を拾い出している様子のイラスト" width="360">
+</section>
+
+<h2>こんな困りごとのために</h2>
+<div class="grid two">
+<div class="card"><h3>本数が1本足りない</h3><p>「配置長 ÷ ピッチ」を切り捨てると、間隔がピッチを超えます（1000 を @300 なら 4 本・間隔 333）。ひろいだしは切り上げて 5 本・間隔 250 と出します。</p></div>
+<div class="card"><h3>同じ部材がいくつもある</h3><p>部材に「同じ部材の数（× 箇所）」を入れると、本数・総長・重さにかけて出します。</p></div>
+<div class="card"><h3>重さの単位質量を調べ直す</h3><p>JIS G 3112 の異形棒鋼（D6〜D41）の単位質量を中に持っているので、径を選ぶだけです。</p></div>
+<div class="card"><h3>定尺から何本切れるか分からない</h3><p>径ごとに定尺（3.5〜12 m）を選ぶと、切寸の長い順に詰めて、発注の本数・端材・歩留まりを出します。定尺より長い切寸は「継手が要る」と出します。</p></div>
+</div>
+
+<h2>できること</h2>
+<table>
+<tr><th>鉄筋の行</th><td>径（D6〜D41）・ピッチで（配置長・ピッチ・両端／片端／両端なし）か本数で・切寸・メモ</td></tr>
+<tr><th>出す値</th><td>1部材の本数・実際の間隔・合計本数（× 箇所）・総長・重さ</td></tr>
+<tr><th>現場の集計</th><td>径ごとの本数・総長・重さ・合計の t・定尺の発注（本数・端材・歩留まり・継手が要る本数）</td></tr>
+<tr><th>まとめ方</th><td>現場 → 部材 → 鉄筋の行・字の大きさ（3段）</td></tr>
+<tr><th>データ</th><td>拾い出しの CSV・iCloud Drive の毎日の控え・控えのファイル・ゴミ箱（30日）・アカウントなし・解析と広告なし</td></tr>
+</table>
+<p class="note">計算は入れた寸法をもとにした目安です。最終的な配筋や数量は、図面・仕様書・施工条件で確かめてください。</p>
+<p class="note"><a href="support.html">使い方</a>・<a href="privacy.html">プライバシーポリシー</a>・<a href="terms.html">利用規約</a>もご覧ください。</p>
+</main>
+<footer class="site"><div class="wrap">
+<p><a href="./">紹介</a><a href="support.html">使い方とお問い合わせ</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシーポリシー</a></p>
+<p>ひろいだしは、個人開発者の續橋涼（TsuzuKit）が作っているアプリです。</p>
+<p>© 2026 TsuzuKit</p>
+</div></footer>
+</div>
+<div data-l="en" lang="en">
+<header class="site"><div class="wrap">
+<a class="brand" href="./"><img src="assets/icon.png" alt="" width="32" height="32">Hiroidashi</a>
+<nav class="site"><a href="./">About</a><a href="support.html">Help</a><a href="privacy.html">Privacy</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<div>
+<p class="eyebrow">A rebar takeoff for iPhone, iPad and Android</p>
+<h1>Counts that respect the spacing.<br>Weights by member, and stock bars to order.</h1>
+<p class="lead">A rebar calculator for taking off quantities from drawings. Add rebar rows to each member (bar size, spacing or count, cut length) to get counts rounded up so no gap exceeds the spacing, and weights from JIS unit masses. Site Totals shows the weight by bar size and how many stock bars to order, with offcuts and yield.</p>
+<a class="cta" href="#store" id="store">Coming to the App Store and Google Play</a>
+<p class="note">One purchase unlocks everything. No in-app purchases, subscriptions or ads.</p>
+</div>
+<img src="assets/hero.jpg" alt="Illustration of a rebar takeoff from drawings next to a rebar cage" width="360">
+</section>
+
+<h2>Made for these problems</h2>
+<div class="grid two">
+<div class="card"><h3>One bar short</h3><p>Rounding span ÷ spacing down leaves gaps wider than the spacing (1000 at @300 gives 4 bars at 333). Hiroidashi rounds up: 5 bars at 250.</p></div>
+<div class="card"><h3>Many identical members</h3><p>Set how many identical members there are (×) and counts, lengths and weights are multiplied.</p></div>
+<div class="card"><h3>Looking up unit masses again</h3><p>JIS G 3112 unit masses for deformed bars (D6 to D41) are built in: just pick the size.</p></div>
+<div class="card"><h3>How many stock bars?</h3><p>Choose a stock length (3.5 to 12 m) for each size: cut lengths are packed longest first to give the order count, offcuts and yield. Cuts longer than the stock are flagged as needing a splice.</p></div>
+</div>
+
+<h2>What it does</h2>
+<table>
+<tr><th>Rebar rows</th><td>Bar size (D6 to D41), by spacing (span, max spacing, both ends / one end / neither) or by count, cut length, notes</td></tr>
+<tr><th>Results</th><td>Bars per member, actual gap, total bars (× identical members), total length, weight</td></tr>
+<tr><th>Site Totals</th><td>Bars, length and weight by size, total in tonnes, stock order (count, offcuts, yield, splices needed)</td></tr>
+<tr><th>Organizing</th><td>Sites, members and rebar rows; text in three sizes</td></tr>
+<tr><th>Data</th><td>CSV of the takeoff, daily iCloud Drive backups, backup file, Trash (30 days), no account, no analytics or ads</td></tr>
+</table>
+<p class="note">Results are estimates based on the dimensions you enter. Check the final rebar layout and quantities against the drawings, specifications and site conditions.</p>
+<p class="note">See also <a href="support.html">Help</a>, the <a href="privacy.html">Privacy Policy</a> and the <a href="terms.html">Terms of Use</a>.</p>
+</main>
+<footer class="site"><div class="wrap">
+<p><a href="./">About</a><a href="support.html">Help & Contact</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a></p>
+<p>Hiroidashi is made by Ryo Tsuzukihashi, an independent developer (TsuzuKit).</p>
+<p>© 2026 TsuzuKit</p>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja" data-title-ja="使い方とお問い合わせ - ひろいだし" data-title-en="Help &amp; Contact - Hiroidashi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"ja"],p="en";for(var i=0;i<l.length;i++){var c=String(l[i]).toLowerCase();if(c.indexOf("ja")===0){p="ja";break}if(c.indexOf("en")===0){p="en";break}}var d=document.documentElement;d.lang=p;var t=d.getAttribute("data-title-"+p);if(t){document.title=t}})();</script>
+<title>使い方とお問い合わせ - ひろいだし</title>
+<meta name="description" content="ひろいだしの使い方（鉄筋の行・部材と現場・現場の集計と定尺・計算のしかた）とよくあるご質問、お問い合わせ。 / How to use Hiroidashi (rebar rows, members and sites, site totals and stock, how it calculates), FAQ and contact.">
+<meta property="og:title" content="使い方とお問い合わせ - ひろいだし">
+<meta property="og:description" content="ひろいだしの使い方（鉄筋の行・部材と現場・現場の集計と定尺・計算のしかた）とよくあるご質問、お問い合わせ。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hiroidashi.tsuzukit.com/support.html">
+<meta property="og:image" content="https://hiroidashi.tsuzukit.com/assets/og.jpg">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div data-l="ja" lang="ja">
+<header class="site"><div class="wrap">
+<a class="brand" href="./"><img src="assets/icon.png" alt="" width="32" height="32">ひろいだし</a>
+<nav class="site"><a href="./">紹介</a><a href="support.html">使い方</a><a href="privacy.html">プライバシー</a></nav>
+</div></header>
+<main class="wrap">
+<article class="doc">
+<p class="eyebrow">HELP</p>
+<h1>使い方とお問い合わせ</h1>
+<p>ひろいだしは、図面から鉄筋の数量を拾い出す、配筋の計算アプリです。</p>
+<h2>1. 拾いはじめる</h2>
+<p>現場の名前・最初の部材の名前・同じ部材の数（× 箇所）を入れて［拾いはじめる］を押すと、鉄筋の行の窓が開きます。</p>
+<h2>2. 鉄筋の行を足す</h2>
+<p>径を選び、本数の出し方を選びます。<b>ピッチで</b>は配置長とピッチ（これ以下）と端の鉄筋（両端に置く・片端だけ・両端に置かない）、<b>本数で</b>は1部材の本数を入れます。最後に切寸（1本の長さ）を入れて保存します。下の帯に、この行の合計本数（× 箇所）・実際の間隔・重さが出ます。</p>
+<h2>3. 直す・消す・上に足す</h2>
+<p>行を押すと窓が開きます。直して保存・ごみ箱の印で消す・［この行の上に1行足す］ができます。</p>
+<h2>4. 部材と現場</h2>
+<p>上の題（部材の名前）を押すと、現場と部材の一覧が開きます。［新しい部材］で部材を足し、現場の … から「現場の集計と定尺」を開けます。部材の名前と箇所は、右上の調整の印から直せます。</p>
+<h2>5. 現場の集計と定尺</h2>
+<p>径ごとの本数・総長・重さと合計の t が出ます。径ごとに定尺（3.5〜12 m）を選ぶと、切寸の長い順に詰めて、発注の本数・端材・歩留まりを出します。定尺より長い切寸は「継手が要る」と出し、発注の本数には入れません。</p>
+<h2>計算のしかた</h2>
+<p>区間の数 ＝ 配置長 ÷ ピッチ を切り上げた数。両端に置く ＝ 区間 ＋ 1、片端だけ ＝ 区間、両端に置かない ＝ 区間 − 1。実際の間隔 ＝ 配置長 ÷ 区間。重さ ＝ 総長 × 単位質量（JIS G 3112）。</p>
+<h2>よくあるご質問</h2>
+<h3>ほかのアプリより本数が1本多い</h3>
+<p>割り切れないとき、切り捨てると間隔がピッチを超えるため、ひろいだしは切り上げます（ピッチは「これ以下」の決まりのため）。</p>
+<h3>切りしろは入りますか</h3>
+<p>入りません。発注の目安として使ってください。</p>
+<h3>機種変更のとき</h3>
+<p>iPhone・iPad は iCloud Drive の毎日の控えから戻せます。Android は控えのファイル（.hiroidashi）を書き出して、新しい端末で読みこみます。</p>
+<h2>お問い合わせ</h2>
+<p><a href="mailto:ryo.tsuzukihashi@tsuzukit.com">ryo.tsuzukihashi@tsuzukit.com</a>（日本語・英語）</p>
+</article>
+</main>
+<footer class="site"><div class="wrap">
+<p><a href="./">紹介</a><a href="support.html">使い方とお問い合わせ</a><a href="terms.html">利用規約</a><a href="privacy.html">プライバシーポリシー</a></p>
+<p>ひろいだしは、個人開発者の續橋涼（TsuzuKit）が作っているアプリです。</p>
+<p>© 2026 TsuzuKit</p>
+</div></footer>
+</div>
+<div data-l="en" lang="en">
+<header class="site"><div class="wrap">
+<a class="brand" href="./"><img src="assets/icon.png" alt="" width="32" height="32">Hiroidashi</a>
+<nav class="site"><a href="./">About</a><a href="support.html">Help</a><a href="privacy.html">Privacy</a></nav>
+</div></header>
+<main class="wrap">
+<article class="doc">
+<p class="eyebrow">HELP</p>
+<h1>Help &amp; Contact</h1>
+<p>Hiroidashi is a rebar calculator for taking off quantities from drawings.</p>
+<h2>1. Start the takeoff</h2>
+<p>Enter a site name, the first member and how many identical members there are, then tap Start the Takeoff. The rebar row editor opens.</p>
+<h2>2. Add rebar rows</h2>
+<p>Pick the bar size and how to count. <b>By spacing</b> takes the span, the maximum spacing and the end bars (both ends, one end or neither); <b>By count</b> takes the bars per member. Then enter the cut length and save. The bar at the bottom shows the total bars (× identical members), the actual gap and the weight.</p>
+<h2>3. Fix, delete or insert rows</h2>
+<p>Tap a row to edit it, delete it with the trash icon, or tap Insert a Row Above.</p>
+<h2>4. Members and sites</h2>
+<p>Tap the title (the member name) to open sites and members. Use New Member to add one, and open Site Totals and Stock from a site's ... menu. Edit the member's name and count with the slider icon.</p>
+<h2>5. Site Totals and stock</h2>
+<p>See bars, length and weight by size and the total in tonnes. Choose a stock length (3.5 to 12 m) for each size: cut lengths are packed longest first to give the order count, offcuts and yield. Cuts longer than the stock are flagged as needing a splice and left out of the order count.</p>
+<h2>How it calculates</h2>
+<p>Spaces = span ÷ spacing, rounded up. Both ends = spaces + 1, one end = spaces, neither = spaces − 1. Actual gap = span ÷ spaces. Weight = total length × unit mass (JIS G 3112).</p>
+<h2>FAQ</h2>
+<h3>One more bar than other apps</h3>
+<p>When the span doesn't divide evenly, rounding down would leave a gap wider than the spacing, so Hiroidashi rounds up (the spacing is a maximum).</p>
+<h3>Is saw kerf included?</h3>
+<p>No. Use the stock order as a guide.</p>
+<h3>Changing devices</h3>
+<p>On iPhone and iPad, restore from the daily iCloud Drive backup. On Android, export a backup file (.hiroidashi) and import it on the new device.</p>
+<h2>Contact</h2>
+<p><a href="mailto:ryo.tsuzukihashi@tsuzukit.com">ryo.tsuzukihashi@tsuzukit.com</a> (Japanese or English)</p>
+</article>
+</main>
+<footer class="site"><div class="wrap">
+<p><a href="./">About</a><a href="support.html">Help & Contact</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a></p>
+<p>Hiroidashi is made by Ryo Tsuzukihashi, an independent developer (TsuzuKit).</p>
+<p>© 2026 TsuzuKit</p>
+</div></footer>
+</div>
+</body>
+</html>
